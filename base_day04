@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+.section{
+  color:green;
+  font-family:"arial";
+  font-style:normal;
+  font-weight:bold;
+  font-size:10px;
+  text-align:center;
+  padding: 10px;
+  border-style: solid;
+  border-width: 5px;
+}
+#basic{
+  text-decoration:blink;
+  border-color:#00FF00;
+}
+#project{
+  color:orange;
+  font-family:"fantasy";
+  font-style:italic;
+  font-weight:normal;
+  font-size:15px;
+  text-indent: 2em;
+  text-align:left;
+  text-decoration:underline;
+  border-color:#00FFFF;
+}
+h3{background-color:yellow;}
+h5{background-color:pink;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;} 
+a:hover {
+  text-decoration:underline;
+  color:#FF00FF;}
+a:active {text-decoration:underline;}
+ul.lan{
+     list-style-type: square;
+     color:black;
+    }
+</style>
+</head>
+<body bgcolor="#d0d0d0">
+<h1>简历</h1>
+ 
+ <div class="section" id="basic">
+<p>姓名：鬼使白</p>
+<hr />
+<p>TEL:12345678</p>
+<hr />
+<p>邮箱：<a href="http://www.baidu.com" target="_blank">123456@pp.com</a></p>
+<hr />
+<p>学历：北京邮电大学  本科</p>
+</div>
+  
+<div class="section" id="project">
+<h3>项目经验</h3>
+<h5>项目A</h5>
+  <p style="color: red; margin-left: 20px">aaaaa</p>
+  <p>使用语言</p>
+<ul class="lan">
+<li>javasricpt</li>
+<li>python</li>
+<li>php</li>
+</ul>
+<h5>项目B</h5>
+  <p style="color: blue; margin-left: 20px">bbbbb</p>
+ </div> 
+ 
+</body>
+</html>
