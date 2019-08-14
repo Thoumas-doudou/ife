@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.section{
+  color:green;
+  font-family:"arial";
+  font-style:normal;
+  font-weight:bold;
+  font-size:10px;
+  text-align:center
+}
+#basic{text-decoration:blink;}
+#project{
+  color:orange;
+  font-family:"fantasy";
+  font-style:italic;
+  font-weight:normal;
+  font-size:15px;
+  text-indent: 2em;
+  text-align:left;
+  text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+<h1>简历</h1>
+ <div class="section" id="basic">
+<p>姓名：鬼使白</p>
+<hr />
+<p>TEL:12345678</p>
+<hr />
+<p>邮箱：11111@tt.com</p>
+<hr />
+<p>学历：北京邮电大学  本科</p>
+</div>
+  
+<div class="section" id="project">
+<h3>项目经验</h3>
+<h5>项目A</h5>
+  <p style="color: red; margin-left: 20px">aaaaa</p>
+<h5>项目B</h5>
+  <p style="color: blue; margin-left: 20px">bbbbb</p>
+ </div> 
+ 
+</body>
+</html>
