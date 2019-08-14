@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>简历</h1>
+<p>姓名：鬼使白</p>
+<hr />
+<p>TEL:12345678</p>
+<hr />
+<p>邮箱：11111@tt.com</p>
+<hr />
+<p>学历：北京邮电大学  本科</p>
+<h3>项目经验</h3>
+<h5>项目A</h5>
+  <p style="color: red; margin-left: 20px">aaaaa</p>
+<h5>项目B</h5>
+  <p style="color: blue; margin-left: 20px">bbbbb</p>
+</body>
+</html>
