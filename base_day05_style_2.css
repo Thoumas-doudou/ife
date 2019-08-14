@@ -1,0 +1,24 @@
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;} 
+a:hover {
+  text-decoration:underline;
+  color:#FF00FF;}
+a:active {text-decoration:underline;}
+
+#title {
+	line-height:30px;
+    background-color:#3299CC;
+    height:800px;
+    width:13%;
+    float:left;
+    padding:5px; 
+}
+#title>h1 {
+	text-align:center;
+	}
+
+.section {
+	width:80%;
+    float:left;
+    padding:10px;
+}
