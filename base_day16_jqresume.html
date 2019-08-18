@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=100%, initial-scale=1" />
+<title>鬼使白的简历</title>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("p").click(function(){
+  $(this).hide();
+  });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var date =Date();
+  $(".btn1").click(function(){
+    alert("当前时间: " +date);
+  });
+  $(".btn2").click(function(){
+	$(".section").toggle("slow");
+  });
+});
+</script>
+
+
+<style>   
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;} 
+a:hover {
+  text-decoration:underline;
+  color:#FF00FF;}
+a:active {text-decoration:underline;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin:0;
+    padding:0;	
+}
+
+#title {
+	line-height:30px;
+    background-color:#ffff99;
+    height:140px;
+	width:100%;
+    float:left;
+	left:0;    
+	text-align:center;
+	animation:title_color 5s linear infinite alternate;
+    -webkit-animation:title_color 5s linear infinite alternate;
+}
+
+@keyframes title_color
+{
+    0%   {background: #ffff99;}
+    10%  {background: #ffff00;}
+    20%  {background: #ccff00;}
+	30%  {background: #99ff00;}
+    40%  {background: #00ff66;}
+	50%  {background: #33ffcc;}
+    60%  {background: #00ffff;}
+    70%  {background: #33ccff;}
+	80%  {background: #0066ff;}
+    90%  {background: #9933ff;}
+	100% {background: #cc0066;}
+}
+ 
+@-webkit-keyframes title_color /* Safari 与 Chrome */
+{
+    0%   {background: #ffff99;}
+    10%  {background: #ffff00;}
+    20%  {background: #ccff00;}
+	30%  {background: #99ff00;}
+    40%  {background: #00ff66;}
+	50%  {background: #33ffcc;}
+    60%  {background: #00ffff;}
+    70%  {background: #33ccff;}
+	80%  {background: #0066ff;}
+    90%  {background: #9933ff;}
+	100% {background: #cc0066;}
+}
+
+
+.section {
+	float:left;/*important*/
+	width:100%;
+    height:120px;
+	margin-bottom:1px;
+}
+
+.section>h1 {
+	float: left;/*important*/
+	background-color:#D8D8D8;
+	text-align:center;
+	font-size:25px;
+	height:120px;
+    width:20%;
+	margin-top:0;/*important*/
+}
+.section>p {
+	text-indent: 5em;
+	width:80%;
+	height:40px;
+	float:right;
+	margin-top:0;/*important*/
+	margin-bottom:0;
+}
+
+</style>
+
+
+<style>
+.btn1,.btn2 {
+  background: #2e466e;
+  background-image: -webkit-linear-gradient(top, #2e466e, #415989);
+  background-image: -moz-linear-gradient(top, #2e466e, #415989);
+  background-image: -ms-linear-gradient(top, #2e466e, #415989);
+  background-image: -o-linear-gradient(top, #2e466e, #415989);
+  background-image: linear-gradient(to bottom, #2e466e, #415989);
+  -webkit-border-radius: 17;
+  -moz-border-radius: 17;
+  border-radius: 17px;
+  text-shadow: 0px 1px 0px #263666;
+  -webkit-box-shadow: inset 0px 0px 15px 3px #23395e;
+  -moz-box-shadow: inset 0px 0px 15px 3px #23395e;
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px 30px 12px 30px;
+  border: solid #1f2f47 1px;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  color: #ffffff;
+  background: #415989;
+  text-decoration: none;
+}
+
+.btn3 {
+  background: #79bbff;
+  background-image: -webkit-linear-gradient(top, #79bbff, #378de5);
+  background-image: -moz-linear-gradient(top, #79bbff, #378de5);
+  background-image: -ms-linear-gradient(top, #79bbff, #378de5);
+  background-image: -o-linear-gradient(top, #79bbff, #378de5);
+  background-image: linear-gradient(to bottom, #79bbff, #378de5);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  text-shadow: 0px 1px 0px #528ecc;
+  -webkit-box-shadow: 3px 4px 0px 0px #1564ad;
+  -moz-box-shadow: 3px 4px 0px 0px #1564ad;
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px 30px 12px 30px;
+  border: solid #337bc4 1px;
+  text-decoration: none;
+}
+
+.btn2:hover {
+  color: #ffffff;
+  background: #378de5;
+  text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+    <div id="title">
+    <h1>简历</h1>
+	<p id="demo"></p>
+	<button class="btn1" type="button" οnclick="alert('ceshi-custom')">显示时间</button>
+	<button class="btn2">展开简历</button>
+	</div>
+	<div class="section" id="personal">
+    <h1>基本信息</h1>
+	<p><b>姓名</b>&emsp;张三&emsp;&emsp;<b>性别</b>&emsp;男&emsp;&emsp;<b>应聘职位</b>&emsp;Web前端</p>
+	</div>
+    <div class="section" id="contact">
+    <h1>联系方式</h1>
+	<p><b>手机</b>&emsp; 1234567&emsp;&emsp;<b>Email</b>&emsp;<a href="http://www.baidu.com" target="_blank">123456@pp.com</a>&emsp;&emsp;<b>个人主页</b>&emsp;&emsp;<a href="https://github.com/Thoumas-doudou" target="_blank">https://github.com/Thoumas-doudou</a>
+	</div>
+	<div class="section" id="ability">
+    <h1>能力描述</h1>
+	<p><b>技术能力</b>熟练掌握HTML,CSS,JavaScript</p>
+	<p><b>综合能力</b>良好的沟通，主动积极，勤奋努力</p>
+	</div>
+	<div class="section" id="educaion">
+    <h1>教育经历</h1>
+	<p><b>本科</b>百度ife</p>
+	<p><b>研究生</b>百度ife</p>
+	</div>
+	<div class="section" id="project">
+    <h1>项目经历</h1>
+	<p><b>小度小度</b>aaaa</p>
+	<p><b>SAN Doc</b>bbbb</p>
+	</div>
+
+<body>
+</html>
