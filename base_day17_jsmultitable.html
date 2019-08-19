@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=100%, initial-scale=1" />
+<title>js九九乘法表</title>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script>
+	document.write("<table border='1'>");
+	for (var i=1; i<=9; i++){
+	document.write("<tr>");
+	for(var j=1; j<=i; j++){
+		document.write("<td>");
+		document.write(j+"*"+i+"="+j*i);
+		document.write("</td>");
+	}
+	document.write("</tr>");
+}
+	document.write("</table>");
+</script>
+<style>
+
+</style>
+
+</head>
+<body>
+</body>
+</html>
