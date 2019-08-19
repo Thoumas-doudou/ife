@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>进制转换</title>
+	<script src="/jquery/jquery-3.3.1.js"></script>
+	<script>
+    function d2b(decstring,bitstring) {
+    // 在这里实现你的转化方法，注意需要判断输入必须为一个非负整数	  
+        var dec= Number(decstring);
+		var bit= Number(bitstring);
+		if(isInteger(dec)==false){  alert("输入为非整数，请输入符合要求的数" );}
+		else if(dec<0){  alert("输入为负数，请输入符合要求的数" );}
+		else{
+		var binstring=dec.toString(2);
+	    var bin= Number(binstring);
+		
+		if(binstring.length==bit){
+		document.getElementById("result").innerHTML=(dec+"的二进制表示为"+bin);}
+		if(binstring.length>bit){
+		document.getElementById("result").innerHTML=(dec+"的二进制表示为"+bin);
+		alert("输入的二进制位数小于生成二进制数位数!")}
+		if(binstring.length<bit){
+		var zero =bit-binstring.length;
+		for(var zerostring="";zero>0;zero--)
+		{zerostring=zerostring+"0";}
+		document.getElementById("result").innerHTML=(dec+"的二进制表示为"+zerostring+bin);}
+	    }
+}
+    function isInteger(obj) {
+        return typeof obj === 'number' && obj%1 === 0
+}
+
+    </script>
+	
+</head>
+<body>        
+    <input id="dec-number" type="number" placeholder="输入一个十进制非负整数" min=0>
+	<input id="bin-bit" type="number" placeholder="输入转化后二进制数位数">
+    <button id="trans-btn" type="button" onclick="d2b(document.getElementById('dec-number').value,document.getElementById('bin-bit').value)">转化为二进制</button>
+    <p id="result">运算结果</p>
+    
+</body>
+</html>
